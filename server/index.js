@@ -1,10 +1,7 @@
 const express = require('express');
+const passportConfig = require('./services/passport');
 const app = express();
 
-
-app.get('/', (req, res) => {
-    res.send({hi: 'there'});
-});
 
 //Dynamic port binding
 const PORT = process.env.PORT || 5000;
