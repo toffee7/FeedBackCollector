@@ -14,7 +14,9 @@
   "author": "toffee",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^1.3.1",
     "express": "^4.15.4",
+    "mongoose": "^4.9.3",
     "nodemon": "^1.11.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",

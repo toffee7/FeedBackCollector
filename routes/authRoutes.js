@@ -22,6 +22,11 @@ module.exports = (app) => {
 
     app.get('/auth/linkedin/callback', passport.authenticate('linkedin'));
 
+    //add route for logout
+    app.get('/api/logout', (req, res) => {
+        req.logout();
+    });
+
 
 };
 
