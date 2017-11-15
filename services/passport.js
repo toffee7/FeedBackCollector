@@ -37,8 +37,7 @@ passport.use(new GoogleStrategy({
                 //user exists 
                 done(null, existingUser);
             } else {
-
-                //create a new user in mongodb
+                //create a new user in mongodbk
                 new User({ authID: profile.id })
                 .save()
                 .then(user => done(null, user));
